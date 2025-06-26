@@ -13,6 +13,7 @@ import LoginForm from "./components/loginForm";
 import Logout from "./components/logout";
 import RegisterForm from "./components/registerForm";
 import ProfileForm from "./components/profileForm";
+import X from "./components/x";
 import ProtectedRoute from "./components/common/protectedRoute";
 import auth from "./services/authService";
 import "react-toastify/dist/ReactToastify.css";
@@ -56,6 +57,7 @@ class App extends Component {
               path="/profile"
               render={(props) => <ProfileForm {...props} user={user} />}
             />
+            <Route path="/x" component={X} />
             <Route path="/not-found" component={NotFound} />
             <Redirect from="/" exact to="/movies" />
             <Redirect to="/not-found" />

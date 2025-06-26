@@ -29,6 +29,9 @@ const NavBar = ({ user }) => {
           <NavLink className="nav-item nav-link" to="/rentals">
             Rentals
           </NavLink>
+          <NavLink className="nav-item nav-link" to="/x">
+            X
+          </NavLink>
           {!user && (
             <React.Fragment>
               <NavLink className="nav-item nav-link" to="/login">
